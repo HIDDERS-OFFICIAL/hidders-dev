@@ -92,51 +92,6 @@ Hidders is not a framework; it is a **Compiler**.
 2.  **Transpiler:** Converts high-level `<logic>` syntax into safe, memory-managed **Rust** code using `web-sys` and `wasm-bindgen`.
 3.  **Builder:** Orchestrates `cargo` and `wasm-pack` to produce a highly optimized binary.
 
-## 📦 Installation & Quick Start
-
-### Prerequisites
-
-  * [Rust & Cargo](https://rustup.rs/)
-  * `wasm-pack` (`cargo install wasm-pack`)
-
-### 1\. Build the Engine
-
-Clone the repo and build the compiler CLI.
-
-```bash
-git clone [https://github.com/your-username/hidders.git](https://github.com/your-username/hidders.git)
-cd hidders
-cargo build --release
-```
-
-### 2\. Create a Hidders Project
-
-Create a file named `app.hdr` in your directory (use the example above).
-
-### 3\. Run the Compiler
-
-Use the engine to compile your `.hdr` file into a WASM web app.
-
-```bash
-# Run the engine on your file
-cargo run
-
-# This generates a 'hidders_build' directory
-cd hidders_build
-
-# Compile to WebAssembly
-wasm-pack build --target web
-```
-
-### 4\. Serve
-
-Serve the directory to see your app running at near-native speeds.
-
-```bash
-python3 -m http.server 8000
-# Open localhost:8000 in your browser
-```
-
 ## 🗺️ Roadmap
 
   - [x] **v0.1: Core Engine** - Lexer & Parser for `.hdr` files.
@@ -145,16 +100,6 @@ python3 -m http.server 8000
   - [ ] **v0.3: Data Layer** - SQLite integration for the `<model>` tag.
   - [ ] **v0.4: Desktop Target** - Integration with Tauri for native binaries.
   - [ ] **v1.0: The Studio** - A specialized IDE for Hidders development.
-
-## 🤝 Contributing
-
-We are building a new paradigm. If you love Rust, Compilers, or just hate Glue Code, we need you.
-
-1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b feature/amazing-feature`).
-3.  Commit your changes (`git commit -m 'Add some amazing feature'`).
-4.  Push to the branch (`git push origin feature/amazing-feature`).
-5.  Open a Pull Request.
 
 ## 📜 License
 
