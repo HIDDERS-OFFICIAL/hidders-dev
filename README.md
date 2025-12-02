@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Hidders Banner](https://via.placeholder.com/1200x300?text=Hidders:+The+Unified+Stack)
+![Hidders Banner](cover.png)
 
 **One File. One Language. Every Platform.**
 
